@@ -114,3 +114,262 @@ a {
     white-space: nowrap;
     border: 0;
 }
+
+/* PART 2: REPOSITORY SECTION */
+
+.repositories {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.repositories h3 {
+    margin-bottom: 15px;
+}
+
+#repo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#repo-list li {
+    padding: 15px;
+    margin-bottom: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#repo-list h4 {
+    margin: 0 0 8px;
+}
+
+#repo-list p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#repo-list a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+#repo-list a:hover {
+    text-decoration: underline;
+}
+/* Loading animation */
+
+#message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.loader {
+    width: 16px;
+    height: 16px;
+    border: 3px solid #ccc;
+    border-top-color: #58a6ff;
+    border-radius: 50%;
+    display: inline-block;
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* =====================================
+   PART 2: REPOSITORY EXPLORER
+===================================== */
+
+.repositories {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.repositories h3 {
+    margin-bottom: 15px;
+}
+
+#repo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#repo-list li {
+    padding: 15px;
+    margin-bottom: 12px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border-radius: 8px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#repo-list h4 {
+    margin: 0 0 8px;
+}
+
+#repo-list p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#repo-list a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+#repo-list a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================
+   PART 3: LOADING INDICATOR
+===================================== */
+
+#message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.loader {
+    width: 16px;
+    height: 16px;
+
+    border: 3px solid #ccc;
+    border-top-color: #58a6ff;
+
+    border-radius: 50%;
+
+    display: inline-block;
+
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =====================================
+   ACCESSIBILITY
+===================================== */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+    border: 0;
+}
+
+
+/* =====================================
+   RESPONSIVE IMPROVEMENTS
+===================================== */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input,
+    .search-box button {
+        width: 100%;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #repo-list li {
+        padding: 12px;
+    }
+
+}
+
+.history-section {
+    margin: 20px 0;
+}
+
+.history-section h3 {
+    margin-bottom: 10px;
+}
+
+#history-message {
+    margin-top: 8px;
+    color: #fbbf24;
+    font-size: 14px;
+}
+/* Search History Styles */
+#search-history {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+#search-history li {
+    background: #e8e8e8;
+    color: #222;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+ /* Search History Button Styles */
+.history-btn {
+    background: #e8e8e8;
+    color: #222;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.history-btn:hover {
+    background: #333;
+    color: white;
+}
+
+.history-btn:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 3px;
+}
+#clear-history {
+    margin-top: 12px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #dc2626;
+    color: white;
+    cursor: pointer;
+}
+
+#clear-history:hover {
+    background: #b91c1c;
+}

@@ -1,39 +1,118 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub User Finder</title>
-    <link rel="stylesheet" href="style.css">
 
+    <title>GitHub User Finder</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <main class="container">
+
         <h1>GitHub User Finder</h1>
+
+        <!-- Search Form -->
         <form id="searchForm" class="search-box" novalidate>
-            <label class="visually-hidden" for="username">GitHub username</label>
+
+            <label class="visually-hidden" for="username">
+                GitHub Username
+            </label>
+
             <input
                 type="text"
                 id="username"
                 placeholder="Enter GitHub Username"
                 autocomplete="off"
             >
-            <button id="searchBtn" type="submit">Search</button>
+
+            <button id="searchBtn" type="submit">
+                Search
+            </button>
+
+
         </form>
+        <!-- Search History Section -->
+
+<section class="history-section">
+    <h3>Recent Searches</h3>
+
+    <ul id="search-history"></ul>
+
+    <p id="history-message" role="status" aria-live="polite"></p>
+
+    <button id="clear-history" type="button">
+        Clear History
+    </button>
+</section>
+
+
+
+        <!-- Status and Error Messages -->
         <p id="message" role="status" aria-live="polite"></p>
+
+        <!-- GitHub User Profile -->
         <section id="profile" class="profile hidden">
-            <img id="avatar" src="" alt="">
+
+            <img
+                id="avatar"
+                src=""
+                alt="GitHub profile picture"
+            >
+
             <h2 id="name"></h2>
+
             <p id="bio"></p>
+
+            <!-- User Statistics -->
             <div class="stats">
-                <p>Followers: <span id="followers"></span></p>
-                <p>Following: <span id="following"></span></p>
-                <p>Public Repos: <span id="repos"></span></p>
+
+                <p>
+                    Followers:
+                    <span id="followers"></span>
+                </p>
+
+                <p>
+                    Following:
+                    <span id="following"></span>
+                </p>
+
+                <p>
+                    Public Repositories:
+                    <span id="repos"></span>
+                </p>
+
             </div>
-   <a id="profile-link" href="#" target="_blank" rel="noopener noreferrer">View GitHub Profile</a>
+
+            <!-- GitHub Profile Link -->
+            <a
+                id="profile-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View GitHub Profile
+            </a>
+
+            <!-- Repository Explorer - PART 2 -->
+            <div class="repositories">
+
+                <h3>Latest Repositories</h3>
+
+                <ul id="repo-list"></ul>
+
+            </div>
+
         </section>
+
     </main>
+
     <script src="script.js"></script>
+
 </body>
 </html>

@@ -15,6 +15,8 @@ GitHub User Finder is a lightweight web app that looks up public GitHub profiles
 
 - Search for a GitHub user by username.
 - View the user's avatar, name, bio, followers, following, and public repository count.
+- Browse the user's five most recently updated public repositories.
+- Reuse the five most recent successful searches, saved in the browser.
 - Open the user's GitHub profile directly.
 - Get feedback for empty input, users that are not found, and network errors.
 - Submit searches using either the button or the Enter key.
